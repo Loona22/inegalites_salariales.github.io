@@ -1,0 +1,101 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+canvas {
+  display: block;
+}
+
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+  font-size : 70px;
+  margin : 0;
+  color :white;
+  padding-top : 20%;
+}
+
+h2 {
+  text-align: center;
+  font-size : 50px;
+  margin : 0;
+  color :white;
+  padding-top : 5%;
+}
+
+span {
+  font-size: 80px;
+}
+
+#deb {
+  height : 100vh;
+  margin : auto;
+  background-color: #7467A7;
+}
+
+/* SALAIRE */
+
+#salaire {
+  background-color: #E5E5E5;
+  color : #D99173;
+  height : 100vh;
+}
+
+h3 {
+  margin : 0;
+  font-size: 40px;
+  text-align: center;
+  padding : 100px;
+}
+
+#salaire p {
+  text-align: center;
+  font-size: 30px;
+  width : 50%;
+  margin: auto;
+}
+
+/* MAP */
+
+#map {
+  background-color: #7467A7;
+  color : white;
+  height: 100vh;
+}
+
+#map p {
+  text-align: center;
+  font-size: 30px;
+  width : 50%;
+  margin: auto;
+  padding : 100px;
+}
+
+#map span {
+  font-size: 50px;
+  display: block;
+  padding : 30px;
+}
+
+#map .titre {
+  color : white;
+  text-align: center;
+  width: 80%;
+  font-size: 20px;
+  padding : 0;
+  text-decoration: underline;
+}
+
+#map .legende {
+  color : white;
+  text-align: center;
+  width: 80%;
+  font-size: 20px;
+  padding : 0;
+  font-family: 'Hind', sans-serif;
+}
+
+#map main {
+  padding-bottom : 30px;
+}
