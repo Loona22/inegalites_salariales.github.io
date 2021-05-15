@@ -34,7 +34,6 @@ function preload(){
 
 function setup() {
   createCanvas(1777, 400);
-  background(116,103,167);
   image(hauts, 484 ,66);
   image(grandest, 526, 95);
   image(bourgogne, 515, 152);
@@ -108,7 +107,6 @@ function mouseClicked(){
 }
 
 function afficheData(i){
-  background(116,103,167);
   image(hauts, 484 ,66);
   image(grandest, 526, 95);
   image(bourgogne, 515, 152);
@@ -138,7 +136,7 @@ function afficheData(i){
   text("Revenu moyen femme : " + rF +"€", 800, 190, 300, 350);
   rH = tab.get(i, 'Revenu homme (€)');
   textSize(20);
-  text("Revenu moyen femme : " + rH +"€", 800, 210, 300, 350);
+  text("Revenu moyen homme : " + rH +"€", 800, 210, 300, 350);
   ecart = tab.get(i, 'Ecart (€)');
   textSize(20);
   text("Soit un écart de : " + ecart +"€", 800, 240, 300, 350);

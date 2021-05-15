@@ -34,6 +34,22 @@ span {
   background-color: #7467A7;
 }
 
+#prev {
+  position: fixed;
+  left : 150px;
+  top : 50vh;
+}
+
+#next {
+  position: fixed;
+  right : 150px;
+  top : 50vh;
+}
+
+a img {
+  width : 80px;
+}
+
 /* SALAIRE */
 
 #salaire {
@@ -46,14 +62,24 @@ h3 {
   margin : 0;
   font-size: 40px;
   text-align: center;
-  padding : 100px;
+  padding : 80px;
 }
 
 #salaire p {
-  text-align: center;
-  font-size: 30px;
-  width : 50%;
+  text-align: justify;
+  font-size: 25px;
+  width : 70%;
   margin: auto;
+}
+
+button {
+  padding : 10px;
+  border : 0px;
+}
+
+button:hover {
+  background-color: #A2BDB4;
+  color : #F1EFE3;
 }
 
 /* MAP */
@@ -65,37 +91,108 @@ h3 {
 }
 
 #map p {
-  text-align: center;
+  text-align: justify;
   font-size: 30px;
   width : 50%;
   margin: auto;
-  padding : 100px;
 }
 
 #map span {
   font-size: 50px;
   display: block;
   padding : 30px;
+  text-align: center;
 }
 
-#map .titre {
+.titre {
   color : white;
-  text-align: center;
-  width: 80%;
+  text-align: center !important;
+  width: 50% !important;
   font-size: 20px;
   padding : 0;
   text-decoration: underline;
+  margin : auto;
 }
 
-#map .legende {
+.legende {
   color : white;
-  text-align: center;
-  width: 80%;
-  font-size: 20px;
-  padding : 0;
+  text-align: justify !important;
+  width: 80% !important;
+  font-size: 20px !important ;
+  padding : 10px;
   font-family: 'Hind', sans-serif;
+  margin : auto;
 }
 
 #map main {
   padding-bottom : 30px;
+}
+
+/* Secteur */
+
+#secteur {
+  background-color: #E5E5E5;
+  color : #D99173;
+  height : 100vh;
+  display: grid;
+  grid-template-rows: 5% 90% 5%;
+}
+
+article {
+  width : 60%;
+  margin: auto;
+  grid-row-start: 2 ;
+}
+
+.explication {
+  font-size: 30px;
+  text-align: justify;
+  padding : 5%;
+  margin: 0px;
+}
+
+#secteur main {
+  text-align: center;
+}
+
+#secteur-schema {
+  background-color: #E5E5E5;
+  color : #D99173;
+  height : 100vh;
+}
+
+#secteur-schema main {
+  width : 600px;
+  margin : auto;
+  padding-top : 50px;
+  padding-bottom: 50px;
+}
+
+.squareH {
+  height: 50px;
+  width: 50px;
+  background-color: #2DB994;
+}
+
+.squareF {
+  height: 50px;
+  width: 50px;
+  background-color: #E97F59;
+}
+
+#leg {
+  display: grid;
+  grid-template-columns: 30% 20% 20% 30%;
+  text-align: center;
+  margin : 30px;
+}
+
+#first {
+  grid-column-start: 2 ;
+  justify-self: center;
+}
+
+#sec {
+  grid-column-start: 3 ;
+  justify-self: center;
 }
