@@ -88,6 +88,12 @@ button:hover {
   background-color: #7467A7;
   color : white;
   height: 100vh;
+  display: grid;
+  grid-template-rows: 5% 30% 40% 20% 5%;
+}
+
+#deb {
+  grid-row-start: 2;
 }
 
 #map p {
@@ -95,6 +101,14 @@ button:hover {
   font-size: 30px;
   width : 50%;
   margin: auto;
+}
+
+#map main {
+  grid-row-start: 3;
+}
+
+#exp {
+  grid-row-start: 4;
 }
 
 #map span {
@@ -108,7 +122,7 @@ button:hover {
   color : white;
   text-align: center !important;
   width: 50% !important;
-  font-size: 20px;
+  font-size: 25px;
   padding : 0;
   text-decoration: underline;
   margin : auto;
@@ -147,8 +161,13 @@ article {
 .explication {
   font-size: 30px;
   text-align: justify;
-  padding : 5%;
+  padding : 2%;
   margin: 0px;
+}
+
+.explication span {
+  color : #A2BDB4;
+  font-size: 30px;
 }
 
 #secteur main {
@@ -157,7 +176,7 @@ article {
 
 #secteur-schema {
   background-color: #E5E5E5;
-  color : #D99173;
+  color : #D99072;
   height : 100vh;
 }
 
@@ -171,13 +190,13 @@ article {
 .squareH {
   height: 50px;
   width: 50px;
-  background-color: #2DB994;
+  background-color: #a2bdb4;
 }
 
 .squareF {
   height: 50px;
   width: 50px;
-  background-color: #E97F59;
+  background-color: #D99072;
 }
 
 #leg {
@@ -190,9 +209,15 @@ article {
 #first {
   grid-column-start: 2 ;
   justify-self: center;
+  color : black;
 }
 
 #sec {
   grid-column-start: 3 ;
   justify-self: center;
+  color : black;
+}
+
+#textSalaire {
+  color : #7467A7;
 }

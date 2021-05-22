@@ -10,11 +10,15 @@ let p;
 function preload(){
   tab = loadTable('./DATASET.csv', 'csv', 'header'); 
   //header : premiere ligne nom des colones
+
+  salaire1 = loadImage('./img/salaire.png'); // Load the image
+  salaire2 = loadImage('./img/salaire2.png'); // Load the image
+  salaire3 = loadImage('./img/salaire3.png'); // Load the image
+  salaire4 = loadImage('./img/salaire4.png'); // Load the image
 }
 
 function setup() {
   createCanvas(1777, 700);
-  img = loadImage('./img/salaire.png'); // Load the image
   
   bouton1 = createButton("Le fameux 22%");
   bouton2 = createButton("Temps, le temps");
@@ -34,7 +38,7 @@ function setup() {
   bouton4.position(1100,900);
 
   textSize(45);
-  text("Click on the buttons", 700, 400);
+  text("Appuyez sur les boutons", 650, 400);
 }
 
 function ScaleImg(){
@@ -43,13 +47,13 @@ function ScaleImg(){
   noStroke();
   rect(1050, 120, 450, 300, 20);
   fill(0);
-  image(img, 700, 160, img.width / 4, img.height / 4);
+  image(salaire1, 700, 160, salaire1.width, salaire1.height);
   chiffre = tab.get(0, 'Chiffre');
   textSize(40);
   text(chiffre + "%", 1100, 210);
   explication = tab.get(0, 'Explications');
   textSize(15);
-  text(explication, 1100, 260, 350, 450);
+  text(explication, 1100, 260, 352, 450);
 }
 
 function ScaleImg2(){
@@ -58,7 +62,7 @@ function ScaleImg2(){
   noStroke();
   rect(1050, 120, 450, 300, 20);
   fill(0);
-  image(img, 720, 200, img.width / 5, img.height / 5);
+  image(salaire2, 700, 160, salaire2.width, salaire2.height);
   chiffre = tab.get(1, 'Chiffre');
   textSize(40);
   text(chiffre + "%", 1100, 210);
@@ -73,7 +77,7 @@ function ScaleImg3(){
   noStroke();
   rect(1050, 120, 450, 300, 20);
   fill(0);
-  image(img, 740, 200, img.width / 6, img.height / 6);
+  image(salaire3, 700, 160, salaire3.width, salaire3.height);
   chiffre = tab.get(2, 'Chiffre');
   textSize(40);
   text(chiffre + "%", 1100, 210);
@@ -88,7 +92,7 @@ function ScaleImg4(){
   noStroke();
   rect(1050, 120, 450, 300, 20);
   fill(0);
-  image(img, 750, 200, img.width / 7, img.height / 7);
+  image(salaire4, 700, 160, salaire4.width, salaire4.height);
   chiffre = tab.get(3, 'Chiffre');
   textSize(40);
   text(chiffre + "%", 1100, 210);

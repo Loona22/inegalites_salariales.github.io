@@ -1,6 +1,7 @@
 let table;
 let l = 0;
 let a = 0;
+let titre;
 
 function preload() {
   table = loadTable('./secteur.csv', 'csv');
@@ -18,27 +19,27 @@ function setup() {
 }
 
 function colorWheel(x, y) {
-  strokeWeight(20);
+  strokeWeight(15);
   strokeCap(SQUARE);
-  
   
   for (let count = 0; count < 8; count++) {
     //males 100 %
     part = table.get(count+22, 2);
-    stroke(162, 189, 180);
+    stroke('#a2bdb4');
     line(x, y, x + 5*part * cos(a),
       y + 5*part* sin(a));
     a += 360/8;
   }
   
-    for (let count = 0; count < 8; count++) {
-
+  strokeWeight(15);
+  strokeCap(SQUARE);
+  for (let count = 0; count < 8; count++) {
     //females 
     tot = table.get(count+22, 2);
     sal = table.get(count+22, 6);
-    stroke(217, 144, 114);
-    line(x, y, x + sal*tot*5/100 * cos(a),
-      y + sal *5*tot/100* sin(a));
+    stroke('#D99072');
+    line(x, y, x + sal*tot*5/100 * cos(a+5),
+      y + sal *5*tot/100* sin(a+5));
     
     a += 360/8;
   }
