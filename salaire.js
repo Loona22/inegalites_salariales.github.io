@@ -18,7 +18,7 @@ function preload(){
 }
 
 function setup() {
-  createCanvas(1777, 700);
+  createCanvas(1777, 600);
   
   bouton1 = createButton("Le fameux 22%");
   bouton2 = createButton("Temps, le temps");
@@ -45,58 +45,58 @@ function ScaleImg(){
   background(229, 229, 229);
   fill(241, 239, 227);
   noStroke();
-  rect(1050, 120, 450, 300, 20);
+  rect(850, 140, 600, 250, 20);
   fill(0);
-  image(salaire1, 700, 160, salaire1.width, salaire1.height);
+  image(salaire1, 500, 160, salaire1.width, salaire1.height);
   chiffre = tab.get(0, 'Chiffre');
   textSize(40);
-  text(chiffre + "%", 1100, 210);
+  text(chiffre + "%", 900, 210);
   explication = tab.get(0, 'Explications');
   textSize(15);
-  text(explication, 1100, 260, 352, 450);
+  text(explication, 900, 260, 470, 650);
 }
 
 function ScaleImg2(){
   background(229, 229, 229);
   fill(241, 239, 227);
   noStroke();
-  rect(1050, 120, 450, 300, 20);
+  rect(850, 140, 600, 250, 20);
   fill(0);
-  image(salaire2, 700, 160, salaire2.width, salaire2.height);
+  image(salaire2, 500, 160, salaire2.width, salaire2.height);
   chiffre = tab.get(1, 'Chiffre');
   textSize(40);
-  text(chiffre + "%", 1100, 210);
+  text(chiffre + "%", 900, 210);
   explication = tab.get(1, 'Explications');
   textSize(15);
-  text(explication, 1100, 260,350, 450);
+  text(explication, 900, 260, 420, 650);
 }
 
 function ScaleImg3(){
   background(229, 229, 229);
   fill(241, 239, 227);
   noStroke();
-  rect(1050, 120, 450, 300, 20);
+  rect(850, 140, 600, 250, 20);
   fill(0);
-  image(salaire3, 700, 160, salaire3.width, salaire3.height);
+  image(salaire3, 500, 160, salaire3.width, salaire3.height);
   chiffre = tab.get(2, 'Chiffre');
   textSize(40);
-  text(chiffre + "%", 1100, 210);
+  text(chiffre + "%", 900, 210);
   explication = tab.get(2, 'Explications');
   textSize(15);
-  text(explication, 1100, 260, 350, 450);
+  text(explication, 900, 260, 480, 650);
 }
 
 function ScaleImg4(){
   background(229, 229, 229);
   fill(241, 239, 227);
   noStroke();
-  rect(1050, 120, 450, 300, 20);
+  rect(850, 140, 600, 250, 20);
   fill(0);
-  image(salaire4, 700, 160, salaire4.width, salaire4.height);
+  image(salaire4, 500, 160, salaire4.width, salaire4.height);
   chiffre = tab.get(3, 'Chiffre');
   textSize(40);
-  text(chiffre + "%", 1100, 210);
+  text(chiffre + "%", 900, 210);
   explication = tab.get(3, 'Explications');
   textSize(15);
-  text(explication, 1100, 260, 350, 450);
+  text(explication, 900, 260, 480, 650);
 }

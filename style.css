@@ -28,8 +28,13 @@ span {
   font-size: 80px;
 }
 
-#deb {
+#intro {
+  margin : auto;
+  background-color: #7467A7;
   height : 100vh;
+}
+
+#deb {
   margin : auto;
   background-color: #7467A7;
 }
