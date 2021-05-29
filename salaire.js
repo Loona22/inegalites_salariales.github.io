@@ -20,10 +20,10 @@ function preload(){
 function setup() {
   createCanvas(1777, 600);
   
-  bouton1 = createButton("Le fameux 22%");
-  bouton2 = createButton("Temps, le temps");
-  bouton3 = createButton("Métiers mon beau métier");
-  bouton4 = createButton("Sexisme et société");
+  bouton1 = createButton("The famous 22%");
+  bouton2 = createButton("Full time / part time");
+  bouton3 = createButton("Occupation distribution");
+  bouton4 = createButton("The structure effect");
   
   bouton1.mousePressed(ScaleImg);
   bouton1.position(500,900);
