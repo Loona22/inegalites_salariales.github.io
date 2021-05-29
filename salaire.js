@@ -38,7 +38,7 @@ function setup() {
   bouton4.position(1100,900);
 
   textSize(45);
-  text("Appuyez sur les boutons", 650, 400);
+  text("Click on the buttons", 650, 400);
 }
 
 function ScaleImg(){
