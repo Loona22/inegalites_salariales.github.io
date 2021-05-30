@@ -130,14 +130,14 @@ function afficheData(i){
   text(nom, 800, 120);
   dif = tab.get(i, 'Difference en %');
   textSize(20);
-  text("Différence salariale de " + dif + "%", 800, 160);
+  text("Wage difference " + dif + "%", 800, 160);
   rF = tab.get(i, 'Women salary (€)');
   textSize(20);
-  text("Revenu moyen femme : " + rF +"€", 800, 190, 300, 350);
+  text("Medium women salary : " + rF +"€", 800, 190, 300, 350);
   rH = tab.get(i, 'Men salary (€)');
   textSize(20);
-  text("Revenu moyen homme : " + rH +"€", 800, 210, 300, 350);
+  text("Medium men salary : " + rH +"€", 800, 210, 300, 350);
   ecart = tab.get(i, 'Gap (€)');
   textSize(20);
-  text("Soit un écart de : " + ecart +"€", 800, 240, 300, 350);
+  text("Gap : " + ecart +"€", 800, 240, 300, 350);
 }
