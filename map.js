@@ -121,23 +121,23 @@ function afficheData(i){
   image(rhone, 498, 200);
   image(val, 400, 142);
   
-  nom = tab.get(i, 'Nom de la région');
+  nom = tab.get(i, 'Name of the county');
   fill(241, 239, 227);
   noStroke();
   rect(750, 60, 550, 250, 20);
   textSize(35);
   fill(162, 189, 180);
   text(nom, 800, 120);
-  dif = tab.get(i, 'Différence en %');
+  dif = tab.get(i, 'Difference en %');
   textSize(20);
   text("Différence salariale de " + dif + "%", 800, 160);
-  rF = tab.get(i, 'Revenu femme (€)');
+  rF = tab.get(i, 'Women salary (€)');
   textSize(20);
   text("Revenu moyen femme : " + rF +"€", 800, 190, 300, 350);
-  rH = tab.get(i, 'Revenu homme (€)');
+  rH = tab.get(i, 'Men salary (€)');
   textSize(20);
   text("Revenu moyen homme : " + rH +"€", 800, 210, 300, 350);
-  ecart = tab.get(i, 'Ecart (€)');
+  ecart = tab.get(i, 'Gap (€)');
   textSize(20);
   text("Soit un écart de : " + ecart +"€", 800, 240, 300, 350);
 }
